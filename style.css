@@ -1,0 +1,57 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0077cc;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Grid layout for content */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        display: block;
+        text-align: center;
+    }
+}
